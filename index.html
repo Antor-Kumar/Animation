@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" alt="logo" class="logo">
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times clear" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">protfilo</a></li>
+             </ul>
+        </div>
+            <!-- <img src="img/cart.png" alt="cart" class="cart"> -->
+            <i class="fa fa-bars clear" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <p>I,m</p>
+            <h1>Mayra</h1>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+        <div class="row">
+            <a href="">Explore My Portfilo</a>
+            <a href=""> Connect With Me<span>&#x2192;</span></a>
+            <p>you can explore more about my portfolio and<br> personal life experiences here.</p>
+        </div>
+    </div>
+    <div class="social-icon">
+        <a href="https://dribbble.com/tags/login" target="_blank"><img src="img/dribble.png" alt=""></a>
+        <a href="https://telegram.org/blog/login" target="blank"><img src="img/telegram.png" alt=""></a>
+        <a href="https://www.instagram.com/accounts/login/" target="blank"><img src="img/instagram.png" alt=""></a>
+        
+        
+        <script>
+            var navLinks = document.getElementById('navLinks');
+            function showMenu(){
+                navLinks.style.right = "0";
+
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px"
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js" integrity="sha512-Cvxz1E4gCrYKQfz6Ne+VoDiiLrbFBvc6BPh4iyKo2/ICdIodfgc5Q9cBjRivfQNUXBCEnQWcEInSXsvlNHY/ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </div>
+</div>
+</body>
+</html>
